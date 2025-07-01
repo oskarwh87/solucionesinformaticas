@@ -5,179 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Soluciones Informáticas Low Cost</title>
   <meta name="description" content="Servicios de reparación de ordenadores, venta de portátiles, eliminación de virus e instalación de programas en Alicante. Técnicos informáticos a domicilio o remoto. Presupuesto sin compromiso.">
-  <meta name="keywords" content="reparación ordenadores Alicante, técnico informático a domicilio, portátiles reacondicionados, eliminar virus, instalación de programas, informática económica, soporte informático Alicante">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Soluciones Informáticas Low Cost">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --color-principal: #1abc9c; /* verde turquesa */
-      --color-secundario: #f8f9fa;
-      --color-texto: #212529;
-      --color-acento: #16a085;
-    }
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--color-texto);
-      background-color: #fff;
-    }
-    header {
-      background: linear-gradient(to right, var(--color-principal), var(--color-acento));
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      position: relative;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    .logo {
-      width: 64px;
-      height: 64px;
-      background: white;
-      color: var(--color-principal);
-      border-radius: 12px;
-      font-size: 1.5rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      background: #e9f7f5;
-      font-weight: 500;
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--color-texto);
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: var(--color-principal);
-    }
-    section {
-      padding: 3rem 1rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    .servicios, .catalogo {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .servicio, .producto {
-      background: white;
-      border: 1px solid #dee2e6;
-      padding: 1.5rem;
-      border-radius: 12px;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-    .servicio:hover, .producto:hover {
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-      transform: translateY(-4px);
-    }
-    .servicio img, .producto img {
-      max-width: 100%;
-      margin-bottom: 1rem;
-    }
-    .producto h3 {
-      margin-bottom: 0.5rem;
-    }
-    .producto p {
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
-    }
-    .producto .precio {
-      font-weight: bold;
-      color: var(--color-principal);
-    }
-    .ventajas li {
-      background: #e0f7f5;
-      padding: 1rem;
-      border-radius: 8px;
-      list-style: none;
-    }
-    form {
-      background: #f8f9fa;
-      padding: 2rem;
-      border-radius: 12px;
-      border: 1px solid #dee2e6;
-    }
-    form label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ced4da;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    form button {
-      background: var(--color-principal);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    form button:hover {
-      background: var(--color-acento);
-    }
-    footer {
-      background: #212529;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-    }
-    .whatsapp-fijo {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      z-index: 999;
-    }
-    .whatsapp-fijo img {
-      width: 30px;
-      height: 30px;
-    }
-  </style>
+  <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -188,94 +16,52 @@
 
   <nav>
     <a href="#servicios">Servicios</a>
-    <a href="#catalogo">Catálogo</a>
-    <a href="#ventajas">Ventajas</a>
+    <a href="catalogo.html">Catálogo</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
   <section id="servicios">
     <h2>Servicios</h2>
     <div class="servicios">
-      <div class="servicio">
-        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Reparación de PC">
+      <a class="servicio" href="servicios/reparacion-pc.html">
+        <img src="img/reparacion-pc.png" alt="Reparación de PC">
         <h3>Reparación de PCs</h3>
         <p>Solucionamos fallos de hardware y software.</p>
-      </div>
-      <div class="servicio">
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Formateo y optimización">
+      </a>
+      <a class="servicio" href="servicios/formateo.html">
+        <img src="img/formateo.png" alt="Formateo y optimización">
         <h3>Formateo y Optimización</h3>
-        <p>Acelera tu equipo con una instalación limpia y configuración personalizada.</p>
-      </div>
-      <div class="servicio">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Eliminación de virus">
+        <p>Instalación limpia del sistema y configuración personalizada.</p>
+      </a>
+      <a class="servicio" href="servicios/virus.html">
+        <img src="img/virus.png" alt="Eliminación de virus">
         <h3>Eliminación de virus</h3>
-        <p>Protege tus archivos eliminando amenazas y mejorando tu seguridad.</p>
-      </div>
-      <div class="servicio">
-        <img src="https://cdn-icons-png.flaticon.com/512/3468/3468379.png" alt="Instalación de programas">
+        <p>Eliminación de amenazas, protección y seguridad.</p>
+      </a>
+      <a class="servicio" href="servicios/programas.html">
+        <img src="img/programas.png" alt="Instalación de programas">
         <h3>Instalación de programas</h3>
-        <p>Instalamos Office, diseño, antivirus, software especializado y más.</p>
-      </div>
+        <p>Office, antivirus, diseño y más.</p>
+      </a>
     </div>
-  </section>
-
-  <section id="catalogo">
-    <h2>Catálogo de Portátiles</h2>
-    <div class="catalogo">
-      <div class="producto">
-        <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/laptop-1954380_960_720.jpg" alt="Portátil HP">
-        <h3>HP EliteBook 840 G5</h3>
-        <p>Intel i5 8ª Gen, 8GB RAM, SSD 256GB, 14" Full HD</p>
-        <p class="precio">249€</p>
-      </div>
-      <div class="producto">
-        <img src="https://cdn.pixabay.com/photo/2014/05/02/21/49/laptop-336369_960_720.jpg" alt="Portátil Lenovo">
-        <h3>Lenovo ThinkPad T480</h3>
-        <p>Intel i5 8ª Gen, 16GB RAM, SSD 512GB, 14"</p>
-        <p class="precio">299€</p>
-      </div>
-      <div class="producto">
-        <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/laptop-1954382_960_720.jpg" alt="Portátil Dell">
-        <h3>Dell Latitude 5490</h3>
-        <p>Intel i7 8ª Gen, 16GB RAM, SSD 512GB, 14" Full HD</p>
-        <p class="precio">349€</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="ventajas">
-    <h2>¿Por qué elegirnos?</h2>
-    <ul class="ventajas">
-      <li>✅ Precios asequibles sin comprometer calidad</li>
-      <li>✅ Asistencia técnica a domicilio o remota</li>
-      <li>✅ Portátiles reacondicionados con garantía</li>
-      <li>✅ Atención rápida y cercana</li>
-    </ul>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
+    <p>📱 <strong>WhatsApp / Teléfono:</strong> <a href="https://wa.me/34624988224">+34 624 988 224</a></p>
     <form action="https://formspree.io/f/YOUR_ID" method="POST">
       <label for="nombre">Nombre</label>
       <input type="text" id="nombre" name="nombre" required>
-
       <label for="telefono">Teléfono</label>
       <input type="tel" id="telefono" name="telefono" required>
-
       <label for="mensaje">Mensaje</label>
       <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
       <button type="submit">Enviar mensaje</button>
     </form>
   </section>
 
-  <a href="https://wa.me/34624988224" class="whatsapp-fijo" target="_blank" aria-label="Contactar por WhatsApp">
-    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
-  </a>
-
   <footer>
-    &copy; 2025 Soluciones Informáticas Low Cost<br>
-    Contacto por WhatsApp: <a href="https://wa.me/34624988224">+34 624 988 224</a>
+    &copy; 2025 Soluciones Informáticas Low Cost
   </footer>
 </body>
 </html>
