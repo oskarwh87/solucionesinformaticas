@@ -6,9 +6,10 @@
   <title>Soluciones Informáticas Low Cost</title>
   <style>
     :root {
-      --color-principal: #007acc;
-      --color-secundario: #f4f4f4;
-      --color-texto: #333;
+      --color-principal: #0d6efd;
+      --color-secundario: #f8f9fa;
+      --color-texto: #212529;
+      --color-acento: #6610f2;
     }
     * {
       box-sizing: border-box;
@@ -16,72 +17,102 @@
     }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       color: var(--color-texto);
       background-color: #fff;
     }
     header {
-      background: var(--color-principal);
+      background: linear-gradient(to right, #0d6efd, #6610f2);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
+      position: relative;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      font-weight: 600;
     }
     header p {
       margin-top: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      background: white;
+      color: var(--color-principal);
+      border-radius: 50%;
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
     nav {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 2rem;
       padding: 1rem;
-      background: #eee;
+      background: #f1f3f5;
+      font-weight: 500;
     }
     nav a {
       text-decoration: none;
       color: var(--color-texto);
-      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--color-principal);
     }
     section {
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       max-width: 960px;
       margin: auto;
     }
     .servicios {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
     .servicio {
-      background: var(--color-secundario);
+      background: white;
+      border: 1px solid #dee2e6;
       padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-radius: 12px;
       text-align: center;
+      transition: all 0.3s ease;
     }
-    .servicio h3 {
-      margin-top: 0.5rem;
+    .servicio:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      transform: translateY(-4px);
+    }
+    .servicio img {
+      width: 50px;
+      margin-bottom: 1rem;
     }
     .ventajas {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
       gap: 1rem;
     }
     .ventajas li {
+      background: #e9ecef;
+      padding: 1rem;
+      border-radius: 8px;
       list-style: none;
-      background: #e6f0f9;
-      padding: 0.75rem 1rem;
-      border-radius: 5px;
     }
     form {
-      background: var(--color-secundario);
+      background: #f8f9fa;
       padding: 2rem;
-      border-radius: 8px;
+      border-radius: 12px;
+      border: 1px solid #dee2e6;
     }
     form label {
       display: block;
@@ -90,34 +121,43 @@
     }
     form input, form textarea {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.75rem;
       margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 0.95rem;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      font-size: 1rem;
     }
     form button {
-      background: var(--color-principal);
+      background: var(--color-acento);
       color: white;
       padding: 0.75rem 1.5rem;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #520dc2;
     }
     footer {
-      background: #333;
+      background: #212529;
       color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
+    }
+    footer a {
+      color: #66b0ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
+    <div class="logo">SI</div>
     <h1>Soluciones Informáticas Low Cost</h1>
-    <p>Servicio técnico profesional y económico</p>
+    <p>Tu técnico de confianza en informática</p>
   </header>
 
   <nav>
@@ -130,20 +170,24 @@
     <h2>Servicios</h2>
     <div class="servicios">
       <div class="servicio">
+        <img src="https://img.icons8.com/ios/50/computer-support.png" alt="PC">
         <h3>Reparación de PCs</h3>
-        <p>Solución de problemas de hardware y software.</p>
+        <p>Solución rápida de problemas técnicos.</p>
       </div>
       <div class="servicio">
-        <h3>Formateo y optimización</h3>
-        <p>Deja tu equipo como nuevo, rápido y eficiente.</p>
+        <img src="https://img.icons8.com/ios/50/settings--v1.png" alt="Config">
+        <h3>Formateo y Optimización</h3>
+        <p>Mejora el rendimiento de tu equipo.</p>
       </div>
       <div class="servicio">
+        <img src="https://img.icons8.com/ios/50/bug.png" alt="Virus">
         <h3>Eliminación de virus</h3>
-        <p>Protección y limpieza completa de amenazas.</p>
+        <p>Protección y seguridad para tus datos.</p>
       </div>
       <div class="servicio">
+        <img src="https://img.icons8.com/ios/50/downloads.png" alt="Software">
         <h3>Instalación de programas</h3>
-        <p>Office, antivirus, navegadores, diseño y más.</p>
+        <p>Office, diseño, antivirus y más.</p>
       </div>
     </div>
   </section>
@@ -151,10 +195,10 @@
   <section id="ventajas">
     <h2>¿Por qué elegirnos?</h2>
     <ul class="ventajas">
-      <li>Precios accesibles y sin sorpresas</li>
-      <li>Asistencia a domicilio o remota</li>
-      <li>Rapidez en diagnóstico y reparación</li>
-      <li>Atención personalizada</li>
+      <li>✅ Tarifas claras y económicas</li>
+      <li>✅ Servicio a domicilio y remoto</li>
+      <li>✅ Atención rápida y profesional</li>
+      <li>✅ Experiencia y trato cercano</li>
     </ul>
   </section>
 
@@ -168,15 +212,15 @@
       <input type="tel" id="telefono" name="telefono" required>
 
       <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-      <button type="submit">Enviar</button>
+      <button type="submit">Enviar mensaje</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 Soluciones Informáticas Low Cost - Todos los derechos reservados<br>
-    WhatsApp: +34 624 988 224
+    &copy; 2025 Soluciones Informáticas Low Cost<br>
+    Contacto por WhatsApp: <a href="https://wa.me/34624988224">+34 624 988 224</a>
   </footer>
 </body>
 </html>
