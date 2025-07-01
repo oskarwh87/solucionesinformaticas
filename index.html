@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Soluciones Informáticas Low Cost</title>
+  <style>
+    :root {
+      --color-principal: #0066cc;
+      --color-secundario: #f4f4f4;
+      --color-texto: #333;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--color-texto);
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .contenedor {
+      text-align: center;
+      padding: 2rem;
+      max-width: 500px;
+      background-color: var(--color-secundario);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-principal);
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p.descripcion {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .boton {
+      background-color: var(--color-principal);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 2rem;
+      transition: background-color 0.3s;
+    }
+    .boton:hover {
+      background-color: #004999;
+    }
+    form {
+      text-align: left;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+    button[type="submit"] {
+      width: 100%;
+      background-color: var(--color-principal);
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #004999;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="logo">Soluciones Informáticas Low Cost</div>
+    <h1>Reparación y asistencia sin complicaciones</h1>
+    <p class="descripcion">Servicio técnico a domicilio, mantenimiento, formateos, limpieza de virus y mucho más.</p>
+    <a href="#contacto" class="boton">Solicitar presupuesto</a>
+
+    <section id="contacto">
+      <form action="https://formspree.io/f/YOUR_ID" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
