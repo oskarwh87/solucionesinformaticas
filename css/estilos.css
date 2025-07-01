@@ -1,0 +1,45 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #212529;
+}
+header, footer {
+  background: #1abc9c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  background: #e0f7f5;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #212529;
+}
+.servicios, .catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.servicio, .producto {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+.precio {
+  color: #1abc9c;
+  font-weight: bold;
+}
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
